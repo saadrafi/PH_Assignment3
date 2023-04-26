@@ -36,11 +36,12 @@
           </ul>
         </div>
         <div>
-          <button
-            class="bg-[#B68C5A] text-lg p-2 font-normal font-['Poppins'] rounded-lg border-none"
+          <label
+            for="my-modal"
+            class="bg-[#B68C5A] text-lg p-4 font-normal font-['Poppins'] rounded-lg border-none"
           >
             Free Consultation
-          </button>
+          </label>
         </div>
       </nav>
       <!-- class="w-full bg-[url(../images/banner.png)] h-80 bg-no-repeat bg-cover mx-auto md:w-[90%] lg:w-[75%] bg-gray-300" -->
@@ -384,7 +385,6 @@
       <!-- FAQ section end -->
     </main>
 
-
     <!-- Footer start -->
     <footer class="footer py-20 bg-neutral text-neutral-content">
       <footer class="w-[75%] footer mx-auto grid grid-cols-1 lg:grid-cols-4 gap-x-4">
@@ -438,5 +438,22 @@
       </footer>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal -->
+
+    <input type="checkbox" id="my-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label for="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+        <h3 class="text-lg font-bold">Oh no!! it works...</h3>
+        <p class="py-4">
+          Congratulations sir/ma'am,
+          <br />
+          You have found the secret modal. You can do whatever you want with this modal.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal end -->
   </body>
 </html>
